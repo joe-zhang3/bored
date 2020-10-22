@@ -39,5 +39,16 @@ __Logging__
 
 - ELK
 
-__Other__
+__API__
+
+- Rest
+- GraphQL
+
+__API Gateway__
+
+- Ambassador
+
+__Sidecar__
+
+- istio
 
