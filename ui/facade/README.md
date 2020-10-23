@@ -5,10 +5,12 @@
 1. npm
 2. yarn
 
-# Steps
+## Start the server by running
 
-``` shell
-yarn install
 ```
+yarn serve
+```
+
+
 
 
