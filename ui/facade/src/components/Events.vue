@@ -8,38 +8,25 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
     name: 'events',
     data() {
         return {
             headers: [
-                { text: 'NAME', value: 'name'},
+                { text: 'NAME', value: 'title'},
                 { text: 'ID', value: 'id'},
                 { text : 'DESCRIPTION', value: 'description'}
             ],
-            desserts: [
-                {
-                    name: 'joe',
-                    id: '1',
-                    description: 'This is the description'
-                },
-                {
-                    name: 'joe',
-                    id: '2',
-                    description: 'This is the description'
-                },
-                {
-                    name: 'joe',
-                    id: '3',
-                    description: 'This is the description'
-                },
-                {
-                    name: 'joe',
-                    id: '4',
-                    description: 'This is the description'
-                }
-            ]
+            desserts: []
         }
+    },
+    mounted () {
+        axios
+        .get('http://localhost:8090/events')
+        .then(response => {
+            this.desserts = response.data
+        })
     }
 };
 </script>

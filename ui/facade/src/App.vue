@@ -1,5 +1,6 @@
 <template>
     <v-app>
+      <login></login>
       <app-navigation></app-navigation>
         <v-main >
           <v-container fluid>
@@ -14,10 +15,12 @@
 
 <script>
 import AppNavigation from './components/AppNavigation';
+import login from './components/Login';
 export default {
     name: 'App',
     components: {
-      AppNavigation
+      AppNavigation,
+      login
     } 
 };
 </script>
