@@ -47,14 +47,9 @@ export default function ButtonAppBar() {
     </div>
     <Switch>
           <Router path="/books">
-            <BookView />
+            <Book />
           </Router>
         </Switch>
     </Router>
   );
-}
-
-function BookView()  {
-  const appElement = document.getElementById('root');
-  ReactDOM.render( <Book />, appElement);
 }
