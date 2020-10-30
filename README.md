@@ -22,14 +22,16 @@ __Container__
 __APP teck stack__
 
 - go
+- nodejs
 - python
 - c#
 - java
 
 __UI__
 
-- React
-- Vue
+- ReactJs
+- Vue.Js
+- AngularJs
 
 __Monitor__
 

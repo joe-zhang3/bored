@@ -1,6 +1,6 @@
 import React from 'react'
 import { DataGrid } from '@material-ui/data-grid';
-import API from './model/api';
+import API from '../model/api';
 
 const columns = [
   { field: 'id', headerName: 'ID', width: 70 },
