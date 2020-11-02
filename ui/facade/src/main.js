@@ -5,7 +5,7 @@ import router from './routers'
 import axios from 'axios'
 
 Vue.config.productionTip = false;
-axios.defaults.baseURL = 'http://localhost:8090'
+axios.defaults.baseURL = '/api/v1/facade/'
 
 new Vue({
   vuetify,
