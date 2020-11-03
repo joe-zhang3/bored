@@ -1,4 +1,4 @@
-module example.com/hello
+module boring-project/facade
 
 go 1.14
 
