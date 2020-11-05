@@ -1,15 +1,10 @@
 package service
 
 import (
+	"boring-project/facade/model"
 )
 
-type car struct {
-	ID          string `json:"id"`
-	Title       string `json:"title"`
-	Description string `json:"description"`
-}
-
-type allCars []car
+type allCars []model.Car
 
 var cars = allCars{
 	{
@@ -23,4 +18,6 @@ func GetAllCars() allCars{
   return cars
 }
 
-
+func Test() []model.Car {
+	return cars
+}

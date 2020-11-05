@@ -4,16 +4,13 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-  "boring-project/facade/service"
+	"boring-project/facade/service"
+	"boring-project/facade/model"
+
 )
 
-type event struct {
-	ID          string `json:"id"`
-	Title       string `json:"title"`
-	Description string `json:"description"`
-}
 
-type allEvents []event
+type allEvents []model.Event
 
 var events = allEvents{
 	{
@@ -26,8 +23,10 @@ var events = allEvents{
 func getAllEvents(g *gin.Context) {
 	g.Header("Access-Control-Allow-Origin", "*")
 	g.Header("Access-Control-Allow-Methods", "PUT, POST, GET, DELETE, OPTIONS")
-	var temp=service.GetAllCars()
-	g.JSON(http.StatusOK, temp)
+	// var temp=service.GetAllCars()
+
+	var cars = service.Test()
+	g.JSON(http.StatusOK, cars)
 }
 
 func handleRequest() {
