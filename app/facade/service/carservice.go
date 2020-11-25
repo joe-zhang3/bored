@@ -14,10 +14,6 @@ var cars = allCars{
 	},
 }
 
-func GetAllCars() allCars{
-  return cars
-}
-
-func Test() []model.Car {
+func GetAllCars() allCars {
 	return cars
 }

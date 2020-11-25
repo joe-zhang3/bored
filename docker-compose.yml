@@ -1,0 +1,30 @@
+version: "3.8"
+services:
+  facade_ui:
+    build: ui/facade
+    depends_on:
+      - facade_app  
+    ports:
+      - "8080:8080"
+
+  facade_app:
+    build: app/facade
+    ports:
+      - "8090:8090"
+
+  book_ui:
+    build: ui/book
+    depends_on:
+      - book_app
+    ports:
+      - "3000:3000"
+
+  book_app:
+    build: app/book
+    ports:
+      - "5000:5000"
+
+
+
+
+
