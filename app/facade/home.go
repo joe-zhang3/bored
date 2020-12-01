@@ -19,8 +19,15 @@ func getAllEvents(g *gin.Context) {
 func handleRequest() {
 	router := gin.Default()
 
-	router.GET("/events", getAllEvents)
+  v1 := router.Group("/v1")
+  {
+    v1.GET("/events", getAllEvents)
+  }
 
+  v2 := router.Group("/v2")
+  {
+    v2.GET("/internal", getAllEvents)
+  }
 	router.Run(":8090")
 }
 

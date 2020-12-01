@@ -2,7 +2,7 @@ from flask import Flask
 from flask_restful import reqparse, abort, Api, Resource
 
 app = Flask(__name__)
-api = Api(app)
+api = Api(app, prefix="/api")
 
 BOOKS = {
     'book1': {'task': 'build an API'},
