@@ -8,7 +8,6 @@ RUN yarn
 
 COPY . .
 
-RUN yarn install
-
+CMD ls -l
 CMD ["yarn", "start"]
 

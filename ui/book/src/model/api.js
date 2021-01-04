@@ -1,5 +1,5 @@
 import axios from 'axios';
 
 export default axios.create({
-  baseURL: `http://localhost:8090`
+  baseURL: `http://book_app:5000/api`
 });

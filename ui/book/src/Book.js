@@ -14,7 +14,7 @@ export default class BookList extends React.Component {
   }
 
   componentDidMount() {
-    API.get('/events')
+    API.get('/books')
       .then(res => {
         const books = res.data;
         this.setState({ books });

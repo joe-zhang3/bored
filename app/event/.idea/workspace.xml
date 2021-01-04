@@ -2,18 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8583ad64-a48e-4a44-9d8d-0270c65aec12" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/../event/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../event/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/facade" beforeDir="false" afterPath="$PROJECT_DIR$/../event/facade" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/../event/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/../event/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home" beforeDir="false" afterPath="$PROJECT_DIR$/../event/home" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home.go" beforeDir="false" afterPath="$PROJECT_DIR$/../event/home.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/car.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/event.go" beforeDir="false" afterPath="$PROJECT_DIR$/../event/model/event.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/carservice.go" beforeDir="false" afterPath="$PROJECT_DIR$/../event/service/eventservice.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/startup.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../event/startup.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../event/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../event/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../event/service/eventservice.go" beforeDir="false" afterPath="$PROJECT_DIR$/../event/service/eventservice.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/facade/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/facade/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/facade/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/facade/babel.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/facade/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/facade/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/facade/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/facade/src/App.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/facade/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/facade/src/assets/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/facade/src/components/AppNavigation.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/facade/src/components/Events.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/facade/src/components/Home.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/facade/src/components/Login.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/facade/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/facade/src/plugins/vuetify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/facade/src/routers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/facade/startup.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/facade/vue.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ui/facade/yarn.lock" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +45,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />

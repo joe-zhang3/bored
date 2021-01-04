@@ -1,7 +1,7 @@
 package service
 
 import (
-	"boring-project/facade/model"
+	"boring-project/event/model"
 )
 
 type AllEvents []model.Event

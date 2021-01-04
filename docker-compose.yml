@@ -1,16 +1,16 @@
 version: "3.3"
 services:
-  facade_ui:
-    build: ui/facade
-    depends_on:
-      - facade_app  
-    ports:
-      - "8080:8080"
+  #event_ui:
+    #build: ui/event
+    #depends_on:
+      #- event_app  
+    #ports:
+      #- "8080:8080"
 
-  facade_app:
-    build: app/facade
-    ports:
-      - "8090:8090"
+  #event_app:
+    #build: app/event
+    #ports:
+      #- "8090:8090"
 
   book_ui:
     build: ui/book
