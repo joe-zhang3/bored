@@ -21,10 +21,10 @@ __Container__
 
 __APP teck stack__
 
-- go
-- nodejs
-- python
-- c#
+- GoLang
+- NodeJs
+- Python
+- C#
 - java
 
 __UI__
@@ -35,7 +35,7 @@ __UI__
 
 __Monitor__
 
-- promethemus
+- Promethemus
 
 __Logging__
 
@@ -52,5 +52,5 @@ __API Gateway__
 
 __Sidecar__
 
-- istio
+- Istio
 
