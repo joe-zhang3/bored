@@ -18,6 +18,8 @@ services:
       - book_app
     ports:
       - "3000:3000"
+    volumes:
+      - "/app/node_modules"
 
   book_app:
     build: app/book
