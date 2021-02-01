@@ -1,6 +1,5 @@
 package main
 
-
 import (
   "fmt"
   "plugin"
@@ -8,7 +7,7 @@ import (
 )
 
 func main(){
-  p, err := plugin.Open("test.so")
+  p, err := plugin.Open("epid.so")
 
   if err != nil {
     fmt.Printf("cannot find the so file")
@@ -20,7 +19,6 @@ func main(){
   if err != nil {
     fmt.Printf("cannot find the symbol")
   }
-
 
   plug, _ := s.(func(http.ResponseWriter, *http.Request))
 

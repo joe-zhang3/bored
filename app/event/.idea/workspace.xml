@@ -2,29 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8583ad64-a48e-4a44-9d8d-0270c65aec12" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../event/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../event/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../event/service/eventservice.go" beforeDir="false" afterPath="$PROJECT_DIR$/../event/service/eventservice.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../../docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ui/facade/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ui/facade/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ui/facade/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ui/facade/babel.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ui/facade/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ui/facade/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ui/facade/public/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ui/facade/src/App.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ui/facade/src/assets/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ui/facade/src/assets/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ui/facade/src/components/AppNavigation.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ui/facade/src/components/Events.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ui/facade/src/components/Home.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ui/facade/src/components/Login.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ui/facade/src/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ui/facade/src/plugins/vuetify.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ui/facade/src/routers.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ui/facade/startup.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ui/facade/vue.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ui/facade/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/facade" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +32,7 @@
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">

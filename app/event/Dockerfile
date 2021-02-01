@@ -8,4 +8,4 @@ COPY . .
 
 RUN go build
 
-CMD ["./facade"]
+CMD ["./event"]
