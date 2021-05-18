@@ -1,43 +1,73 @@
 <template>
-  <div class="text-center">
-    <v-dialog v-model="dialog" width="500">
-      <template v-slot:activator="{ on, attrs }">
-        <v-btn color="red lighten-2" dark v-bind="attrs" v-on="on">
-          Click Me
-        </v-btn>
-      </template>
+    <b-form @submit="onSubmit" @reset="onReset" v-if="show">
+      <b-form-group
+        id="input-group-1"
+        label="Email address:"
+        label-for="input-1"
+        description="We'll never share your email with anyone else."
+      >
+        <b-form-input
+          id="input-1"
+          v-model="form.email"
+          type="email"
+          placeholder="Enter email"
+          required
+        ></b-form-input>
+      </b-form-group>
 
-      <v-card>
-        <v-card-title class="headline grey lighten-2">
-          Privacy Policy
-        </v-card-title>
+      <b-form-group id="input-group-2" label="Your password:" label-for="input-2">
+        <b-form-input
+          id="input-2"
+          type="password" 
+          v-model="form.password"
+          placeholder="Enter password"
+          required
+        ></b-form-input>
+      </b-form-group>
 
-        <v-card-text>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </v-card-text>
+      <b-form-group id="input-group-4" v-slot="{ ariaDescribedby }">
+        <b-form-checkbox-group
+          v-model="form.checked"
+          id="checkboxes-4"
+          :aria-describedby="ariaDescribedby"
+        >
+          <b-form-checkbox value="me">Remember Me?</b-form-checkbox>
+        </b-form-checkbox-group>
+      </b-form-group>
 
-        <v-divider></v-divider>
-
-        <v-card-actions>
-          <v-spacer></v-spacer>
-          <v-btn color="primary" text @click="dialog = false"> I accept </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-dialog>
-  </div>
+      <b-button type="submit" variant="primary">Submit</b-button>
+      <b-button type="reset" variant="danger">Reset</b-button>
+    </b-form>
 </template>
 <script>
-export default {
-  data() {
-    return {
-      dialog: false,
-    };
-  },
-};
+  export default {
+    data() {
+      return {
+        form: {
+          email: '',
+          password: '',
+          checked: true
+        },
+        show: true
+      }
+    },
+    methods: {
+      onSubmit(event) {
+        event.preventDefault()
+        alert(JSON.stringify(this.form))
+      },
+      onReset(event) {
+        event.preventDefault()
+        // Reset our form values
+        this.form.email = ''
+        this.form.password = ''
+        this.form.checked = []
+        // Trick to reset/clear native browser form validation state
+        this.show = false
+        this.$nextTick(() => {
+          this.show = true
+        })
+      }
+    }
+  }
 </script>
