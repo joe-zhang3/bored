@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Main from './Main';
+import { StrictMode } from "react";
+import MainApp from './Main';
 // Import our custom CSS
 import './scss/styles.scss'
+
 // Import all of Bootstrap's JS
-import 'bootstrap/js/dist/popover';
-import 'bootstrap/dist/js/bootstrap.bundle';
+import * as bootstrap from 'bootstrap'
 
 const root = ReactDOM.createRoot(document.getElementById("container"));
 
 root.render(
   <React.StrictMode>
-    <Main />
+    <MainApp />
   </React.StrictMode>
 );
 

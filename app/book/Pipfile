@@ -8,6 +8,8 @@ verify_ssl = true
 [packages]
 flask = "*"
 flask-restful = "*"
+cors = "*"
+flask-cors = "*"
 
 [requires]
 python_version = "3.9"
