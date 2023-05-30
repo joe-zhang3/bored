@@ -1,9 +1,0 @@
-apiVersion: getambassador.io/v2
-kind:  Mapping
-metadata:
-  name:  book
-  namespace: default  
-spec:
-  prefix: /book/
-  method: GET
-  service: book.default:5000

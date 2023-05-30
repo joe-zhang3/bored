@@ -1,14 +1,18 @@
 from flask import Flask
 from flask_restful import reqparse, abort, Api, Resource
+from flask_cors import CORS, cross_origin
 
 app = Flask(__name__)
+cors = CORS(app)
 api = Api(app, prefix="/api")
+app.config['CORS_HEADERS'] = 'Content-Type'
 
-BOOKS = {
-    'book1': {'task': 'build an API'},
-    'book2': {'task': '?????'},
-    'book3': {'task': 'profit!'},
-}
+BOOKS = [
+        {'id': 'book1', 'name': 'How to learn Java', 'price':100},
+        {'id': 'book2', 'name': 'How to learn Python', 'price': 90},
+        {'id': 'book3', 'name': 'How to learn C#','price':101},
+        {'id': 'book4', 'name': 'How to learn Golang', 'price': 11},
+        ]
 
 
 def abort_if_book_doesnt_exist(book_id):
@@ -59,4 +63,4 @@ api.add_resource(book, '/books/<book_id>')
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    app.run(debug=True,host='localhost', port=5000)

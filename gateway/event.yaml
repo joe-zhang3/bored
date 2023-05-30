@@ -1,9 +1,0 @@
-apiVersion: getambassador.io/v2
-kind:  Mapping
-metadata:
-  name:  event
-  namespace: default
-spec:
-  prefix: /event/
-  method: GET
-  service: event-facade.default:8090
